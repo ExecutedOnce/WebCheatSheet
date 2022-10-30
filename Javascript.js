@@ -3,7 +3,7 @@
 
 ////////////STORAGE/////////////////
 //set given value for key
-localStorage.setITem(key, value)
+localStorage.setItem(key, value)
 // Set the given value for the given key 
 localStorage.setItem(key, value) 
 // Get a value with the provided key 
