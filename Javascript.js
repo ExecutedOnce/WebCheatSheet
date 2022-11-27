@@ -15,6 +15,8 @@ fetch("https://pokeapi.co/api/v2/pokemon")
 
 
 
+
+
 ////////////STORAGE/////////////////
 //set given value for key
 localStorage.setItem(key, value)
@@ -45,3 +47,20 @@ JSON.parse()
 .forEach(item) => {
   do this
 }
+
+
+
+
+
+/////////////////////////////////////REACT!/////////////////////////////
+ [pokemonList, setPokemonList] = useState([])
+//thhe ([]) makes the default state an empty liat.
+
+useEffect(() => {
+        fetch("https://pokeapi.co/api/v2/pokemon")
+            .then(response => {
+                //console.log(response);
+                return response.json()
+            })
+    }, []);
+// second paramater of [] makes this run once.
