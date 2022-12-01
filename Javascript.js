@@ -13,6 +13,21 @@ fetch("https://pokeapi.co/api/v2/pokemon")
 //this converts the response object to a json object
 
 
+//////////SPREAD OPERATOR/////////////
+//used to copy a list/object without copying every value (...)
+setPokemonList([...pokemonList, ...json["results"]]);
+const list1 = [1, 2, 3]
+const list2 = [4, 5]
+const mergedList = [...list1, ...list2]
+console.log('Merged List: ', mergedList)
+const obj1 = {a: 1, b: 2}
+const obj2 = {c: 3}
+const mergedObj = {...obj1, ...obj2}
+console.log('Merged Object: ', mergedObj)
+list1.push(...list2) == [(...list1, ...list2)
+                         console.log("""[1,2,3,4,5]""")
+//
+
 
 
 
