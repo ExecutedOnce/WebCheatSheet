@@ -1,0 +1,9 @@
+npx create-react-app my-app-name-here
+cd into my-app-name-here
+npm start
+
+npx create-next-app my-app-name-here
+yarn>
+-dev
+-build
+-start
